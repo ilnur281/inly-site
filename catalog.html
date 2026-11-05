@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог выключателей — INLY</title>
+<meta name="description" content="Каталог выключателей INLY: сенсорные, Wi-Fi с Алисой, кинетические беспроводные.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1">
+<meta name="theme-color" content="#252525">
+</head>
+<body class="">
+<header class="header">
+<div class="container">
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#252525" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<a class="logo" href="index.html">INLY</a>
+<nav class="nav" aria-label="Основное меню">
+<a href="catalog.html" class="active">Каталог</a>
+<a href="catalog.html?type=sensor">Сенсорные</a>
+<a href="catalog.html?type=wifi">С Wi-Fi и Алисой</a>
+<a href="catalog.html?type=kinetic">Беспроводные</a>
+<a href="index.html#delivery">Доставка и оплата</a>
+<a href="#contacts">Контакты</a>
+</nav>
+<div class="header-actions">
+<a class="phone" href="tel:+70000000000">[телефон]</a>
+<a class="cart-btn" href="#cart" aria-label="Корзина"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg><span class="txt">Корзина</span><span class="cart-count" data-cart-count>0</span></a>
+</div>
+</div>
+<nav class="mobile-menu" aria-label="Меню">
+<a href="catalog.html">Каталог</a>
+<a href="catalog.html?type=sensor">Сенсорные</a>
+<a href="catalog.html?type=wifi">С Wi-Fi и Алисой</a>
+<a href="catalog.html?type=kinetic">Беспроводные</a>
+<a href="index.html#delivery">Доставка и оплата</a>
+<a href="tel:+70000000000">Позвонить: [телефон]</a>
+</nav>
+</header>
+<main class="container">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span>Каталог</span></nav>
+<div class="catalog-head">
+<h1>Выключатели</h1>
+<label>Сортировка <select id="sort"><option value="pop">Популярные</option><option value="cheap">Сначала дешевле</option><option value="exp">Сначала дороже</option></select></label>
+</div>
+<div class="chips" role="group" aria-label="Тип выключателя">
+<button class="chip" type="button" data-type="all">Все</button>
+<button class="chip" type="button" data-type="sensor">Сенсорные</button>
+<button class="chip" type="button" data-type="wifi">С Wi-Fi</button>
+<button class="chip" type="button" data-type="smart">Клавишные с Алисой</button>
+<button class="chip" type="button" data-type="kinetic">Беспроводные</button>
+<button class="chip btn-dark" type="button" id="filters-toggle" style="color:#fff">Фильтры</button>
+</div>
+<div class="catalog">
+<aside class="filters" aria-label="Фильтры">
+<fieldset><legend>Цвет</legend>
+<label><input type="radio" name="color" value="all" checked> Все цвета</label>
+<label><input type="radio" name="color" value="white"> Белый</label>
+<label><input type="radio" name="color" value="grey"> Серый</label>
+<label><input type="radio" name="color" value="black"> Чёрный</label>
+</fieldset>
+<fieldset><legend>Клавиш</legend>
+<label><input type="radio" name="keys" value="all" checked> Любое</label>
+<label><input type="radio" name="keys" value="1"> 1 клавиша</label>
+<label><input type="radio" name="keys" value="2"> 2 клавиши</label>
+</fieldset>
+<p style="margin:0;color:#555557">Найдено: <b id="found">0</b></p>
+</aside>
+<div class="catalog-main"><div class="grid" id="catalog-grid"></div></div>
+</div>
+</main>
+<footer class="footer" id="contacts">
+<div class="container">
+<div class="about"><a class="logo" href="index.html">INLY</a><span>Выключатели для дома. Гарантия 1 год.<br>ИП Латыпов Ильнур Нурович</span></div>
+<div class="col"><h3>Каталог</h3><a href="catalog.html?type=sensor">Сенсорные</a><a href="catalog.html?type=wifi">С Wi-Fi и Алисой</a><a href="catalog.html?type=kinetic">Беспроводные</a></div>
+<div class="col"><h3>Покупателям</h3><a href="index.html#delivery">Доставка и оплата</a><a href="index.html#delivery">Оптом</a><a href="#contacts">Гарантия и возврат</a></div>
+<div class="col"><h3>Контакты</h3><span>[телефон]</span><span>[e-mail]</span><span>[мессенджеры]</span></div>
+</div>
+</footer>
+<nav class="tabbar" aria-label="Быстрое меню">
+<a href="index.html"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Главная</a>
+<a href="catalog.html" class="on"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7v7H4z M13 4h7v7h-7z M4 13h7v7H4z M13 13h7v7h-7z"/></svg>Каталог</a>
+<a href="#cart"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg>Корзина</a>
+<a href="#contacts"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg>Связаться</a>
+</nav>
+<script src="js/app.js?v=1"></script>
+</body>
+</html>
